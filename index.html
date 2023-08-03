@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco90v2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid p-0 m-0">
+        <header>
+            <nav class="navbar navbar-expand-sm backgroundNav py-3">
+                <!-- parte do header esquerda -->
+                <div class="container">
+                    <ul class="navbar-nav">
+                        <li class="navbar-item"> <img src="img/logoWhite.svg" alt=""></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-warning">Home</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-white">Ajuda</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-white">Empréstimos</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-white">Conta</a></li>
+                    </ul>
+                    <!-- Parte do header direita -->
+                    <ul class="navbar-nav">
+                        <li class="navbar-item">
+                            <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#popupMensagem">Abra a sua conta</button>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+            <!-- MODAL -->
+            <div class="modal" id="popupMensagem">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header d-flex justify-content-center">
+                            <h1 class="modal-title ">ABRIR A SUA CONTA</h1>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#" method="post">
+                                <div class="form-group my-2 ">
+                                    <label for="name">Nome</label>
+                                    <input type="text" id="name" placeholder="Digite seu nome" class="form-control">
+                                </div>
+                                <div class="form-group my-2">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" placeholder="Digite seu email" class="form-control">
+                                </div>
+                                <div class="form-group my-2">
+                                    <label for="senha">Senha</label>
+                                    <input type="password" id="senha" placeholder="Digite sua melhor senha" class="form-control">
+                                </div>
+                                <div class="form-group d-flex justify-content-center ">
+                                    <button type="submit" class="btn btn-primary " >Cadastrar</button>
+                                </div>
+                                
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+
+            <!-- banner v1 
+            <div id="imagemfundo" class="container-fluid my-4 p-0 d-flex align-items-center" style="height: 700px;">
+                <div class="container m-0 p-0 " style="width: 40%; height: 40%; background-color: brown; "></div>
+                
+            </div>
+            <div class="container-fluid text-center">
+                <h1></h1>
+            </div>  -->
+
+            <!-- banner v2 -->
+
+            <!-- carrosel -->
+
+            <div class="carousel slide" id="demo" data-bs-ride="carousel">
+                <!-- slider -->
+                <div class="carousel-inner" style="height: 750px; overflow: hidden;">
+                    <div class="carousel-item active">
+                        <img src="img/banner.jpg" alt="" style="width: 100%;transition: 1s;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/etienne-martin-2_K82gx9Uk8-unsplash.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carlos-muza-hpjSkU2UYSU-unsplash.jpg" alt="" style="width: 100%;">
+                    </div>
+                </div>
+
+                <!-- controladores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- controladores setas -->
+
+                <button type="button" class="carousel-control-prev" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+            </div>
+        </main>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.backgroundNav {
+    background-color: rgb(138, 34, 34);
+}
+
+#imagemfundo {
+    background-image: url(img/banner.jpg);
+    background-position: top;
+    background-size: cover;
+
+}
